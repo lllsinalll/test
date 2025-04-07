@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>آزمون سطح زبان انگلیسی</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="test-container">
+      <div class="test-header">
+        <h1>آزمون تعیین سطح زبان انگلیسی</h1>
+        <div class="timer" id="timer">۱۵:۰۰</div>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="question-container" id="questionContainer">
+        <div class="question-text" id="questionText"></div>
+        <div class="options-container" id="optionsContainer"></div>
+      </div>
+
+      <div class="navigation" id="navigation">
+        <button class="nav-button" id="prevButton" disabled>سوال قبلی</button>
+        <button class="nav-button" id="nextButton">سوال بعدی</button>
+      </div>
+
+      <div class="results-container" id="resultsContainer">
+        <h2 class="results-title">آزمون تکمیل شد!</h2>
+        <div class="level-display" id="levelDisplay">A1</div>
+        <div class="score-display">
+          نمره شما: <span id="scoreDisplay">۰</span>%
+        </div>
+        <div class="result-buttons">
+          <button class="action-button" id="restartButton">
+            <i class="fas fa-redo"></i>
+            تلاش مجدد
+          </button>
+          <button class="action-button" id="homeButton">
+            <i class="fas fa-home"></i>
+            بازگشت به خانه
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Warning message for unanswered questions -->
+    <div class="overlay" id="overlay"></div>
+    <div class="warning-message" id="warningMessage">
+      <i class="fas fa-exclamation-circle"></i>
+      <h3>پاسخ انتخاب نشده است</h3>
+      <p>لطفاً قبل از ادامه دادن به سوال بعدی، یک گزینه را انتخاب کنید.</p>
+      <button id="confirmButton">متوجه شدم</button>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>

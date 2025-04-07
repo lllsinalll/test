@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرم ورود و ثبت نام پیشرفته</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sign.css" />
+  </head>
+  <body>
+    <a href="#" class="home-button">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <div class="form-container">
+      <!-- Login Form -->
+      <div class="form-box login-form">
+        <h2 class="form-title">ورود به حساب کاربری</h2>
+
+        <form id="loginForm" novalidate>
+          <div class="input-group">
+            <input type="text" id="loginUsername" placeholder="ایمیل " />
+            <i class="fas fa-user"></i>
+            <span class="error-message">لطفا ایمیل خود وارد کنید</span>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="رمز عبور"
+              minlength="6"
+            />
+            <i class="fas fa-lock"></i>
+            <span class="error-message"
+              >رمز عبور باید حداقل ۶ کاراکتر باشد</span
+            >
+          </div>
+
+          <button type="submit" class="btn">ورود</button>
+
+          <div class="social-login">
+            <div class="social-btn google">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social-btn apple">
+              <i class="fab fa-apple"></i>
+            </div>
+          </div>
+
+          <p class="toggle-form">
+            حساب کاربری ندارید؟ <a id="show-signup">ثبت نام کنید</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="form-box signup-form">
+        <h2 class="form-title">ایجاد حساب کاربری</h2>
+
+        <form id="signupForm" novalidate>
+          <div class="user-type-selector">
+            <div class="user-type">
+              <input
+                type="radio"
+                id="student"
+                name="userType"
+                value="student"
+              />
+              <label for="student">دانش آموز</label>
+            </div>
+            <div class="user-type disabled">
+              <input
+                type="radio"
+                id="teacher"
+                name="userType"
+                value="teacher"
+                disabled
+              />
+              <label for="teacher">معلم</label>
+            </div>
+            <div class="user-type disabled">
+              <input
+                type="radio"
+                id="translator"
+                name="userType"
+                value="translator"
+                disabled
+              />
+              <label for="translator">مترجم</label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="fullName" placeholder="نام کامل" />
+            <i class="fas fa-user"></i>
+            <span class="error-message">این فیلد الزامی است</span>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="email" placeholder="ایمیل" />
+            <i class="fas fa-envelope"></i>
+            <span class="error-message">لطفا ایمیل معتبر وارد کنید</span>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="رمز عبور"
+              minlength="6"
+            />
+            <i class="fas fa-lock"></i>
+            <span class="error-message">حداقل ۶ کاراکتر وارد کنید</span>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="تکرار رمز عبور"
+            />
+            <i class="fas fa-lock"></i>
+            <span class="error-message">رمزهای عبور مطابقت ندارند</span>
+          </div>
+
+          <button type="submit" class="btn">ثبت نام</button>
+
+          <div class="social-login">
+            <div class="social-btn google">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social-btn apple">
+              <i class="fab fa-apple"></i>
+            </div>
+          </div>
+
+          <p class="toggle-form">
+            قبلا ثبت نام کرده‌اید؟ <a id="show-login">ورود به حساب</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="sign.js"></script>
+  </body>
+</html>

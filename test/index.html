@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>purrlingual</title>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="mobile-menu-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+          <a href="index.html">
+            <img src="../test/logo.png" alt="Mizu Logo" />
+            <span>پارالینگال</span>
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <div class="nav-items-left">
+            <!-- فروشگاه with double dropdown -->
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                فروشگاه<i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main"
+                    >دوره ها <i class="fas fa-caret-left"></i
+                  ></a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">مبتدی</a>
+                    <a href="#">متوسط</a>
+                    <a href="#">پیشرفته</a>
+                    <a href="#">ویژه</a>
+                  </div>
+                </div>
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main"
+                    >جزوه ها <i class="fas fa-caret-left"></i
+                  ></a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">جزوه1</a>
+                    <a href="#">جزوه2</a>
+                    <a href="#">جزوه3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                آزمون ها <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">IELTS</a>
+                <a href="#">TOEFL</a>
+                <a href="#">DOULINGO</a>
+                <a href="#">GRE</a>
+                <a href="#">OET</a>
+                <a href="#">GMAT</a>
+              </div>
+            </div>
+
+            <!-- خدمات dropdown -->
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                خدمات <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <!-- مشاوره Nested Dropdown -->
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main">
+                    مشاوره <i class="fas fa-caret-left"></i>
+                  </a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">مشاوره تحصیلی</a>
+                    <a href="#">مشاوره مهاجرت</a>
+                    <a href="#">مشاوره شغلی</a>
+                  </div>
+                </div>
+
+                <!-- ترجمه Nested Dropdown -->
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main">
+                    ترجمه <i class="fas fa-caret-left"></i>
+                  </a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">ترجمه مدارک تحصیلی</a>
+                    <a href="#">ترجمه مقالات</a>
+                    <a href="#">ترجمه تخصصی</a>
+                  </div>
+                </div>
+
+                <!-- برنامه درسی (Regular Link) -->
+                <a href="#">برنامه درسی</a>
+              </div>
+            </div>
+
+            <a href="level/level.html" class="nav-item">تعیین سطح</a>
+
+            <!--taeen sath omoomi/ taeensath-->
+            <a href="articles/article.html" class="nav-item">آموزشی</a>
+            <a href="articles/article.html" class="nav-item">موسیقی</a>
+            <a href="contact/contact.html" class="nav-item">همکاری</a>
+            <a href="contact/contact.html" class="nav-item">ارتباط</a>
+          </div>
+
+          <div class="nav-items-right">
+            <!-- Search Bar -->
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <a href="sign/sign.html" class="account">
+              <i class="fas fa-user"></i>
+              <span class="account-text">حساب کاربری</span>
+            </a>
+            <!-- Cart Icon -->
+            <div class="cart-icon-container">
+              <a href="#" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+              <!-- Add this cart dropdown -->
+              <div class="cart-dropdown" id="cart-dropdown">
+                <div class="cart-items-container">
+                  <div class="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>سبد خرید شما خالی است</p>
+                  </div>
+                </div>
+                <div class="cart-footer">
+                  <a href="/cart" class="view-cart-btn">
+                    مشاهده سبد خرید
+                    <i class="fas fa-arrow-left"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="banner">
+      <div class="banner-content" data-aos="fade-up" data-aos-duration="800">
+        <div class="hero-text">
+          <h1>یادگیری زبان را ساده کنید</h1>
+          <div class="animated-underline"></div>
+          <p class="subtitle">با متدهای آموزشی بروز و اساتید بین‌المللی</p>
+
+          <div class="language-icons">
+            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-language"></i>
+            <i class="fas fa-globe-americas"></i>
+          </div>
+
+          <div class="cta-group">
+            <!-- <a href="#" class="cta-button main"
+              >شروع یادگیری <i class="fas fa-arrow-left"></i
+            ></a> -->
+            <a href="#" class="cta-button outline"
+              >مشاهده دوره‌ها <i class="fas fa-book-open"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-wave"></div>
+    </section>
+
+    <div class="reel-container">
+      <div class="flags-reel" id="flagsReel">
+        <!-- Spain -->
+        <a href="spain.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+              alt="Spain Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>اسپانیایی</h3>
+          </div>
+        </a>
+
+        <!-- France -->
+        <a href="france.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+              alt="France Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>فرانسوی</h3>
+          </div>
+        </a>
+
+        <!-- Germany -->
+        <a href="germany.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+              alt="Germany Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>آلمانی</h3>
+          </div>
+        </a>
+
+        <!-- Italy -->
+        <a href="italy.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+              alt="Italy Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>ایتالیایی</h3>
+          </div>
+        </a>
+
+        <!-- USA -->
+        <a href="usa.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+              alt="USA Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>انگلیسی</h3>
+          </div>
+        </a>
+
+        <!-- China -->
+        <a href="china.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+              alt="China Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>چینی</h3>
+          </div>
+        </a>
+
+        <!-- Russia -->
+        <a href="russia.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
+              alt="Russia Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>روسی</h3>
+          </div>
+        </a>
+
+        <!-- South Korea -->
+        <a href="korea.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+              alt="South Korea Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>کره ای</h3>
+          </div>
+        </a>
+
+        <!-- Saudi Arabia -->
+        <a href="saudi-arabia.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+              alt="Saudi Arabia Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>عربی</h3>
+          </div>
+        </a>
+
+        <!-- Turkey -->
+        <a href="turkey.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+              alt="Turkey Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>ترکی</h3>
+          </div>
+        </a>
+
+        <!-- Greece -->
+        <a href="greece.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"
+              alt="Greece Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>یونانی</h3>
+          </div>
+        </a>
+
+        <!-- India -->
+        <a href="india.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+              alt="India Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>هندی</h3>
+          </div>
+        </a>
+
+        <!-- Poland -->
+        <a href="poland.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"
+              alt="Poland Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>لهستانی</h3>
+          </div>
+        </a>
+
+        <!-- Clone the cards for seamless looping -->
+        <!-- Spain -->
+        <a href="spain.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+              alt="Spain Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>اسپانیایی</h3>
+          </div>
+        </a>
+
+        <!-- France -->
+        <a href="france.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+              alt="France Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>فرانسوی</h3>
+          </div>
+        </a>
+
+        <!-- Germany -->
+        <a href="germany.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+              alt="Germany Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>آلمانی</h3>
+          </div>
+        </a>
+
+        <!-- Italy -->
+        <a href="italy.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+              alt="Italy Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>ایتالیایی</h3>
+          </div>
+        </a>
+
+        <!-- USA -->
+        <a href="usa.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+              alt="USA Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>انگلیسی</h3>
+          </div>
+        </a>
+
+        <!-- China -->
+        <a href="china.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+              alt="China Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>چینی</h3>
+          </div>
+        </a>
+
+        <!-- Russia -->
+        <a href="russia.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
+              alt="Russia Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>روسی</h3>
+          </div>
+        </a>
+
+        <!-- South Korea -->
+        <a href="korea.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+              alt="South Korea Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>کره ای</h3>
+          </div>
+        </a>
+
+        <!-- Saudi Arabia -->
+        <a href="saudi-arabia.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+              alt="Saudi Arabia Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>عربی</h3>
+          </div>
+        </a>
+
+        <!-- Turkey -->
+        <a href="turkey.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+              alt="Turkey Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>ترکی</h3>
+          </div>
+        </a>
+
+        <!-- Greece -->
+        <a href="greece.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"
+              alt="Greece Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>یونانی</h3>
+          </div>
+        </a>
+
+        <!-- India -->
+        <a href="india.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+              alt="India Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>هندی</h3>
+          </div>
+        </a>
+
+        <!-- Poland -->
+        <a href="poland.html" class="flag-card">
+          <div class="flag-image-container">
+            <img
+              class="flag-image"
+              src="https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"
+              alt="Poland Flag"
+            />
+          </div>
+          <div class="flag-info">
+            <h3>لهستانی</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <section class="faq-section">
+      <div class="section-container">
+        <h2 data-aos="fade-up">سوالات متداول</h2>
+        <div class="faq-grid">
+          <div class="faq-card" data-aos="fade-up">
+            <div class="faq-question" role="button" aria-expanded="false">
+              <h3>نحوه ثبت نام چگونه است؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>برای ثبت نام می توانید از طریق صفحه دوره ها اقدام نمایید.</p>
+            </div>
+          </div>
+
+          <div class="faq-card" data-aos="fade-up">
+            <div class="faq-question" role="button" aria-expanded="false">
+              <h3>روش های پرداخت چیست؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                شما می توانید از طریق درگاه بانکی، کیف پول یا پرداخت در محل
+                استفاده نمایید.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-card" data-aos="fade-up">
+            <div class="faq-question" role="button" aria-expanded="false">
+              <h3>آیا امکان بازگشت وجه وجود دارد؟</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                بله، در صورت انصراف تا 72 ساعت پس از خرید، امکان بازگشت کامل وجه
+                وجود دارد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="modern-footer" dir="rtl">
+      <div class="footer-wave"></div>
+
+      <div class="footer-container">
+        <!-- Main Content Row -->
+        <div class="main-content-row">
+          <!-- دسترسی سریع -->
+          <div class="footer-group">
+            <h4><i class="fas fa-bolt"></i> دسترسی سریع</h4>
+            <ul class="vertical-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-angle-double-left"></i> درباره ما</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-angle-double-left"></i> تماس با ما</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-double-left"></i> قوانین</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- خدمات -->
+          <div class="footer-group">
+            <h4><i class="fas fa-cogs"></i> خدمات ما</h4>
+            <ul class="vertical-links">
+              <li>
+                <a href="#"><i class="fas fa-angle-left"></i> ترجمه</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-left"></i> مشاوره</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-left"></i> برنامه ریزی</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- پشتیبانی -->
+          <div class="footer-group">
+            <h4><i class="fas fa-headset"></i> پشتیبانی</h4>
+            <ul class="vertical-links">
+              <li><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> تهران، خیابان نمونه</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vertical Separator -->
+        <div class="full-separator"></div>
+
+        <!-- Social & Newsletter -->
+        <div class="footer-column">
+          <h4><i class="fas fa-share-alt"></i> شبکه‌های اجتماعی</h4>
+          <div class="social-grid">
+            <a href="#" class="social-btn telegram">
+              <i class="fab fa-telegram"></i>
+              <span>تلگرام</span>
+            </a>
+            <a href="#" class="social-btn instagram">
+              <i class="fab fa-instagram"></i>
+              <span>اینستاگرام</span>
+            </a>
+            <a href="#" class="social-btn whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>واتساپ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© ۱۴۰۲ تمامی حقوق محفوظ است</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+        </div>
+      </div>
+    </footer>
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-modal">
+        <div class="search-modal-content">
+          <div class="search-input-container">
+            <input
+              type="text"
+              class="search-modal-input"
+              placeholder="جستجو..."
+              id="searchInput"
+              dir="rtl"
+            />
+            <button class="search-modal-submit">جستجو</button>
+          </div>
+          <div class="search-preview" id="searchPreview"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+  </body>
+</html>

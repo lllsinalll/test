@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>تعیین سطح</title>
+    <link rel="stylesheet" type="text/css" href="../nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="level.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../logo.png" alt="Mizu Logo" />
+            <span>پارالینگال</span>
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <div class="nav-items-left">
+            <!-- فروشگاه with double dropdown -->
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                فروشگاه<i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main"
+                    >دوره ها <i class="fas fa-caret-left"></i
+                  ></a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">مبتدی</a>
+                    <a href="#">متوسط</a>
+                    <a href="#">پیشرفته</a>
+                    <a href="#">ویژه</a>
+                  </div>
+                </div>
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main"
+                    >جزوه ها <i class="fas fa-caret-left"></i
+                  ></a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">جزوه1</a>
+                    <a href="#">جزوه2</a>
+                    <a href="#">جزوه3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                آزمون ها <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">IELTS</a>
+                <a href="#">TOEFL</a>
+                <a href="#">DOULINGO</a>
+                <a href="#">GRE</a>
+                <a href="#">OET</a>
+                <a href="#">GMAT</a>
+              </div>
+            </div>
+
+            <!-- خدمات dropdown -->
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                خدمات <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <!-- مشاوره Nested Dropdown -->
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main">
+                    مشاوره <i class="fas fa-caret-left"></i>
+                  </a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">مشاوره تحصیلی</a>
+                    <a href="#">مشاوره مهاجرت</a>
+                    <a href="#">مشاوره شغلی</a>
+                  </div>
+                </div>
+
+                <!-- ترجمه Nested Dropdown -->
+                <div class="nested-dropdown">
+                  <a href="#" class="nested-dropdown-main">
+                    ترجمه <i class="fas fa-caret-left"></i>
+                  </a>
+                  <div class="nested-dropdown-content">
+                    <a href="#">ترجمه مدارک تحصیلی</a>
+                    <a href="#">ترجمه مقالات</a>
+                    <a href="#">ترجمه تخصصی</a>
+                  </div>
+                </div>
+
+                <!-- برنامه درسی (Regular Link) -->
+                <a href="#">برنامه درسی</a>
+              </div>
+            </div>
+
+            <a href="level.html" class="nav-item">تعیین سطح</a>
+            <a href="articles/article.html" class="nav-item">آموزشی</a>
+            <a href="articles/article.html" class="nav-item">موسیقی</a>
+            <a href="contact/contact.html" class="nav-item">همکاری</a>
+            <a href="contact/contact.html" class="nav-item">ارتباط</a>
+          </div>
+
+          <div class="nav-items-right">
+            <!-- Search Bar -->
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <a href="../sign/sign.html" class="account">
+              <i class="fas fa-user"></i>
+              <span class="account-text">حساب کاربری</span>
+            </a>
+            <!-- Cart Icon -->
+            <div class="cart-icon-container">
+              <a href="#" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+              <!-- Add this cart dropdown HTML -->
+              <div class="cart-dropdown">
+                <div class="cart-items-container">
+                  <div class="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>سبد خرید شما خالی است</p>
+                  </div>
+                </div>
+                <div class="cart-footer">
+                  <a href="/cart" class="view-cart-btn">
+                    مشاهده سبد خرید
+                    <i class="fas fa-arrow-left"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="level-test-intro">
+      <!-- Animated Header Section -->
+      <div class="intro-header" data-aos="fade-up">
+        <h1 data-aos="fade-up" data-aos-delay="100">
+          آزمون تعیین سطح زبان میزو
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          در کمتر از ۱۵ دقیقه سطح دقیق مهارت زبان خود را مشخص کنید و مسیر
+          یادگیری شخصی‌سازی شده دریافت نمایید
+        </p>
+
+        <div class="language-icons" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-comment-dots language-icon"></i>
+          <i class="fas fa-language language-icon"></i>
+          <i class="fas fa-globe-americas language-icon"></i>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features-container">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-bolt"></i>
+          <h3>سریع و دقیق</h3>
+          <p>
+            آزمونی هوشمند که با تحلیل پاسخ‌های شما، سطح دقیق زبانتان را در
+            کمترین زمان ممکن مشخص می‌کند
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-chart-line"></i>
+          <h3>تحلیل پیشرفته</h3>
+          <p>
+            گزارش کامل از نقاط قوت و ضعف شما در مهارت‌های مختلف زبان شامل
+            شنیداری، گفتاری، خواندن و نوشتن
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-road"></i>
+          <h3>مسیر یادگیری شخصی</h3>
+          <p>
+            پس از آزمون، برنامه‌ای متناسب با سطح شما برای پیشرفت سریع‌تر پیشنهاد
+            می‌شود
+          </p>
+        </div>
+      </div>
+
+      <!-- Test Information Section -->
+      <div class="test-info" data-aos="fade-up">
+        <h2>آزمون تعیین سطح چگونه کار می‌کند؟</h2>
+        <p>
+          آزمون تعیین سطح میزو با استفاده از الگوریتم‌های هوشمند، سطح دقیق زبان
+          شما را در چهار مهارت اصلی ارزیابی می‌کند. این آزمون بر اساس
+          استانداردهای بین‌المللی CEFR طراحی شده و می‌تواند سطح شما را از مبتدی
+          (A1) تا پیشرفته (C2) تشخیص دهد.
+        </p>
+
+        <div class="test-steps">
+          <div class="test-step" data-aos="fade-left" data-aos-delay="100">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>شروع آزمون</h3>
+              <p>
+                پس از انتخاب نوع آزمون، سوالات به صورت هوشمندانه بر اساس
+                پاسخ‌های شما انتخاب می‌شوند
+              </p>
+            </div>
+          </div>
+
+          <div class="test-step" data-aos="fade-left" data-aos-delay="200">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>پاسخ به سوالات</h3>
+              <p>
+                به سوالات در مهارت‌های مختلف پاسخ دهید. تعداد سوالات بستگی به
+                سطح شما دارد
+              </p>
+            </div>
+          </div>
+
+          <div class="test-step" data-aos="fade-left" data-aos-delay="300">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>دریافت نتیجه</h3>
+              <p>
+                بلافاصله پس از آزمون، نتیجه دقیق به همراه تحلیل کامل دریافت
+                خواهید کرد
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p data-aos="fade-up">
+          <strong>نکته مهم:</strong> لطفا در پاسخ به سوالات دقت کنید و از حدس
+          زدن پاسخ‌ها خودداری نمایید. این آزمون برای تشخیص دقیق سطح شما طراحی
+          شده و پاسخ‌های نادرست می‌توانند نتیجه را تحت تاثیر قرار دهند.
+        </p>
+      </div>
+
+      <!-- Test Type Selection -->
+      <div data-aos="fade-up">
+        <h2
+          style="text-align: center; color: var(--primary); margin-bottom: 2rem"
+        >
+          نوع آزمون خود را انتخاب کنید
+        </h2>
+
+        <div class="buttons-container">
+          <a
+            href="test.html"
+            class="test-button general-test"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <i class="fas fa-globe"></i>
+            آزمون عمومی
+          </a>
+
+          <a
+            href="#"
+            class="test-button special-test"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <i class="fas fa-star"></i>
+            آزمون ویژه کلاس
+          </a>
+        </div>
+        <div class="warning-box" data-aos="fade-up">
+          <i class="fas fa-exclamation-triangle warning-icon"></i>
+          <p class="warning-text">
+            توجه: آزمون ویژه کلاس فقط یکبار قابل انجام است . لطفا قبل از شروع
+            اطمینان حاصل کنید که در محیطی آرام و بدون حواس پرتی قرار دارید و
+            زمان کافی (حدود ۱۵ دقیقه) برای انجام آزمون دارید.
+          </p>
+        </div>
+        <p
+          style="
+            text-align: center;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+          "
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          آزمون عمومی برای تعیین سطح کلی زبان طراحی شده است. اگر برای کلاس‌های
+          خاصی ثبت‌نام کرده‌اید، لطفا از آزمون ویژه کلاس استفاده نمایید.
+        </p>
+      </div>
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-modal">
+        <div class="search-modal-content">
+          <div class="search-input-container">
+            <input
+              type="text"
+              class="search-modal-input"
+              placeholder="جستجو..."
+              id="searchInput"
+              dir="rtl"
+            />
+            <button class="search-modal-submit">جستجو</button>
+          </div>
+          <div class="search-preview" id="searchPreview"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true,
+      });
+    </script>
+    <script src="../nav.js"></script>
+  </body>
+</html>

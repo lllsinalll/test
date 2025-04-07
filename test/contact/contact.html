@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما - میزو</title>
+
+    <!-- Consolidated external resources -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="../nav.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../logo.png" alt="Mizu Logo" />
+            <span>میزو</span>
+          </a>
+        </div>
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <div class="nav-items-left">
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                دوره ها <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">مبتدی</a>
+                <a href="#">متوسط</a>
+                <a href="#">پیشرفته</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropdown-main">
+                آزمون ها <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">IELTS</a>
+                <a href="#">TOEFL</a>
+                <a href="#">DOULINGO</a>
+                <a href="#">GRE</a>
+                <a href="#">OET</a>
+                <a href="#">GMAT</a>
+              </div>
+            </div>
+
+            <a href="../level/level.html" class="nav-item">تعیین سطح</a>
+
+            <a href="#" class="nav-item">مقالات</a>
+            <a href="contact.html" class="nav-item">ارتباط</a>
+          </div>
+
+          <div class="nav-items-right">
+            <!-- Search Bar -->
+
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <a href="#" class="account">
+              <i class="fas fa-user"></i>
+              <span class="account-text">حساب کاربری</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-content">
+      <!-- Banner -->
+      <section class="banner">
+        <div class="container">
+          <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            در ارتباط باشید
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="500"
+            data-aos-anchor=".banner h1"
+          >
+            از طریق فرم زیر اقدام کنید
+          </p>
+        </div>
+      </section>
+
+      <!-- Animated Contact Section -->
+      <div class="container">
+        <section class="contact-section">
+          <form
+            class="contact-form"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="700"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder=" "
+              />
+              <label for="name">نام شما</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder=" "
+              />
+              <label for="email">آدرس ایمیل</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder=" "
+              />
+              <label for="subject">موضوع</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder=" "
+                rows="5"
+                maxlength="500"
+              ></textarea>
+              <label for="message">پیام شما</label>
+              <div class="char-counter" id="char-counter">
+                <span id="char-count">0</span>/500
+              </div>
+              <div class="warning-message" id="warning-message">
+                شما به حد مجاز کاراکترها رسیده‌اید!
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">ارسال پیام</button>
+          </form>
+
+          <div
+            class="contact-info"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="900"
+          >
+            <div class="info-item">
+              <h3>اطلاعات تماس</h3>
+              <p>فرم را پر کنید یا از اطلاعات زیر استفاده نمایید</p>
+            </div>
+            <div class="info-item">
+              <h3>ایمیل</h3>
+              <p>contact@example.com</p>
+            </div>
+            <div class="info-item">
+              <h3>تلفن</h3>
+              <p>+98 912 345 6789</p>
+            </div>
+            <div class="info-item">
+              <h3>شبکه‌های اجتماعی</h3>
+              <div class="social-media">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-telegram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-modal" dir="ltr">
+        <div class="search-modal-content">
+          <div class="search-input-container">
+            <input
+              type="text"
+              class="search-modal-input"
+              placeholder="جستجو..."
+              id="searchInput"
+            />
+            <button class="search-modal-submit">جستجو</button>
+          </div>
+          <div class="search-preview" id="searchPreview">
+            <!-- Search results will appear here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>دسترسی سریع</h4>
+          <ul>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">قوانین</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>ارتباط با ما</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© ۲۰۲۳ میزو. تمام حقوق محفوظ است.</p>
+      </div>
+    </footer>
+
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-modal">
+        <div class="search-modal-content">
+          <div class="search-input-container">
+            <input
+              type="text"
+              class="search-modal-input"
+              placeholder="جستجو..."
+              id="searchInput"
+              dir="rtl"
+            />
+            <button class="search-modal-submit">جستجو</button>
+          </div>
+          <div class="search-preview" id="searchPreview"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800,
+          offset: 100,
+          once: true,
+          mirror: false,
+          startEvent: "load",
+          disable: window.innerWidth < 768,
+          easing: "ease-out-quad",
+        });
+      });
+    </script>
+    <script src="../nav.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
